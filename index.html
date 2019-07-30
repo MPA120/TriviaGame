@@ -6,19 +6,33 @@
 
     <meta charset="UTF-8">
     <title>NASA Trivia Game</title>
-
-
-    <!--Linking CSS style sheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <!--Linking in the Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
+      <header>
+          <img src = 'assets/images/SHUTTLETOPVIEW.jpg' class="shuttle">
+    
+      </header>
+
+      <div class='container'>
+            <div class="jumbotron">
+                    <h1 class="display-4">NASA Trivia</h1>
+                    <p class="lead">"Houston, Tranquility Base here..."</p>
+                        <div class = "col text-center">
+                            <a class="btn btn-danger btn-lg" role="button" style = "color: white; background-color: black,">Start</a>
+                        </div>
+    
+            </div>
+          
 
     <!--Linking the jquery library-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Linking our JS document-->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
 
 </body>

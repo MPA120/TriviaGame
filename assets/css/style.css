@@ -1,0 +1,16 @@
+.jumbotron {
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.shuttle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+    background-image: url("../images/stars.jpg")
+}
