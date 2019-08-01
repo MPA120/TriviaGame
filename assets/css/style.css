@@ -15,3 +15,7 @@
 body {
     background-image: url("../images/stars.jpg")
 }
+
+#time{
+    color: white;
+}
