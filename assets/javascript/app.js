@@ -1,35 +1,70 @@
 $( document ).ready(function() {
 
+function check() {
 
+    var question1 = document.quiz.question1.value;
+    var question2 = document.quiz.question1.value;
+    var question3 = document.quiz.question1.value;
+    var question4 = document.quiz.question1.value;
+    var question5 = document.quiz.question1.value;
+    var question6 = document.quiz.question1.value;
+    var correct = 0;
 
-// Trivia Questions
-var questions = [{
-    question: "What year was NASA founded?",
-    answerList: ["1943", "1972","1958","1954"],
-    answer: 2
+        if (question1 == "1958") {
+            correct++;
+        }
+        if (question2 == "6") {
+            correct++;
+        }
+        if (question3 == "For the Benefit of All") {
+            correct++;
+        }
+        if (question4 == "Apollo 12") {
+            correct++;
+        }
+        if (question5 == "2009") {
+            correct++;
+        }
+        if (question6 == "Explorer") {
+            correct++;
+        }
 
-},{
+var messages = ["Great", "Awesome", "Well Done!"]
 
-    question: "How many Apollo missions were there?",
-    answerList: ['5', '6', '2', '13'],
-    answer: 1
-},{
-    question: "What is NASA's motto?",
-    answerList: ["To Infinity and Beyond!", "More Space!","For the Benefit of All", "I'm Lovin' It"],
-    answer: 2
-},{
-    question: "What was the second mission to reach the Moon?",
-    answerList: ["Apollo 12", "Apollo 13", "Apollo 7", "Voyager 14",],
-    answer: 1
-},{
-    question: "In what year did the final space shuttle mission occur?",
-    answerList: ["2006", "1998", "2009", "2011",],
-    answer: 3,
-},{
-    question: "Which one of the below was NOT a name of a NASA shuttle?",
-    answerList: ["Columbia", "Endeavour", "Discovery", "Explorer",],
-    answer: 3,
+var range;
 
-}];
+if (correct == 0) {
+    range = 2;
+}
 
+if (correct > 0 && correct < 3) {
+    range = 1;
+}
+
+if (correct == 3) {
+    range = 0;
+}
+
+    document.getElementById('number_correct').style.visibility = "visible";
+    document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+}
+
+// This counter works but is not dependent on the start button. I had lots of trouble here. 
+var count=45;
+
+var counter=setInterval(timer, 1000);
+    
+function timer()
+    {
+      count=count-1;
+      if (count <= -1)
+      {
+         clearInterval(counter);
+         alert('Out of Time!');
+         return;
+      }
+    
+      document.getElementById("timer").innerHTML=count + " seconds remaining";
+      
+    }
 })

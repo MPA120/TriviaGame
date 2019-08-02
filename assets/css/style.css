@@ -15,3 +15,22 @@
 body {
     background-image: url("../images/stars.jpg")
 }
+
+#currentQuestion{
+    background-color: white;
+}
+
+#quiz{
+    color: white;
+    font-family: 'Space Mono', monospace;
+}
+
+#timer{
+    font-size: xx-large;
+    color: greenyellow;
+}
+
+#after_submit{
+    visibility: hidden;
+    color: greenyellow;
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel ="stylesheet" href="assets/css/style.css">
+
   </head>
 
   <body>
@@ -26,13 +27,75 @@
                             <a class="btn btn-danger btn-lg" id = "startBtn" style = "color: white; background-color: black,">Start</a>
                         </div>
             </div>
-        </div>
 
-                <div id = 'gameDiv'></div>
-        
-         
-        
+            <form id = "quiz" name = 'quiz'>
 
+                <span id = "timer"></span>
+                <br>
+                <p>"What year was NASA founded?"</p>
+                <input type = "radio" id = "mc" name = "question1" value = "1958"> 1958<br>
+                <input type = "radio" id = "mc" name = "question1" value = "1943"> 1943<br>
+                <input type = "radio" id = "mc" name = "question1" value = "1972"> 1972<br>
+                <input type = "radio" id = "mc" name = "question1" value = "1954"> 1954<br>
+
+                <br>
+
+                <p>"How many Apollo missions were there?"</p>
+                <input type = "radio" id = "mc" name = "question2" value = "5"> 5<br>
+                <input type = "radio" id = "mc" name = "question2" value = "6"> 6<br>
+                <input type = "radio" id = "mc" name = "question2" value = "2"> 2<br>
+                <input type = "radio" id = "mc" name = "question2" value = "13"> 13<br>
+
+                <br>
+
+                <p>"What is NASA's motto?"</p>
+                <input type = "radio" id = "mc" name = "question3" value = "To Infinity and Beyond!"> To Infinity and Beyond!<br>
+                <input type = "radio" id = "mc" name = "question3" value = "More Space!"> More Space!<br>
+                <input type = "radio" id = "mc" name = "question3" value = "For the Benefit of All"> For the Benefit of All<br>
+                <input type = "radio" id = "mc" name = "question3" value = "I'm Lovin' It"> I'm Lovin' It<br>
+
+                <br>
+
+                <p>"What was the second mission to reach the Moon?"</p>
+                <input type = "radio" id = "mc" name = "question4" value = "Apollo 12"> Apollo 12<br>
+                <input type = "radio" id = "mc" name = "question4" value = "Apollo 13"> Apollo 13<br>
+                <input type = "radio" id = "mc" name = "question4" value = "Apollo 7"> Apollo 7<br>
+                <input type = "radio" id = "mc" name = "question4" value = "Voyager 14"> Voyager 14<br>
+
+                <br>
+
+                <p>"In what year did the final space shuttle mission occur?"</p>
+                <input type = "radio" id = "mc" name = "question5" value = "2006"> 2006<br>
+                <input type = "radio" id = "mc" name = "question5" value = "1998"> 1998<br>
+                <input type = "radio" id = "mc" name = "question5" value = "2009"> 2009<br>
+                <input type = "radio" id = "mc" name = "question5" value = "2011"> 2011<br>
+
+                <br>
+
+                <p>"Which one of the below was NOT a name of a NASA shuttle?"</p>
+                <input type = "radio" id = "mc" name = "question6" value = "Columbia"> Columbia<br>
+                <input type = "radio" id = "mc" name = "question6" value = "Endeavour"> Endeavour<br>
+                <input type = "radio" id = "mc" name = "question6" value = "Discovery"> Discovery<br>
+                <input type = "radio" id = "mc" name = "question6" value = "Explorer"> Explorer<br>
+
+                <br>
+
+            <input id = "button" type = "button" value = "Mission Complete" onclick = "check();">
+        </form>
+        
+        <div id = "after_submit">
+                <p id = "number_correct"></p>
+                <p id = "message"></p>
+                <img id = "picture">
+                </div>
+    
+
+            
+
+            
+            
+    </div>
+        
     <!--Linking the jquery library-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Linking our JS document-->
